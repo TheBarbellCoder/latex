@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y apt-utils \
 
 RUN git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git \
        ~/.fonts/SF-Pro \
+       && git clone https://github.com/TheBarbellCoder/Sans-Karla.git \
+       ~/.fonts/Karla \
        && fc-cache -f -v \
        && rm -rf /var/lib/apt/lists/*
 
